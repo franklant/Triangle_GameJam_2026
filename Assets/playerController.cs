@@ -6,26 +6,11 @@ public class playerController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float speed = 5f;
-    public float jumpForce = 6f;
-    public float flipHorizontalBoost = 10f;
-    public float groundDist = 0.1f;
-
-    [Header("Squash and Stretch")]
-    public float squashAmount = 0.7f;
-    public float stretchAmount = 1.3f;
-    public float effectDuration = 0.1f;
-    private Vector3 originalScale;
-    private bool wasGroundedLastFrame;
 
     [Header("References")]
-    public LayerMask terrainLayer;
     public Rigidbody rb;
     public SpriteRenderer sr;
     public Animator animator;
-
-    private bool isGrounded;
-    private bool canFlip;
-    private bool isFlipping;
 
     // Cached input
     private float x;
@@ -35,137 +20,43 @@ public class playerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         if (animator == null) animator = GetComponentInChildren<Animator>();
-        originalScale = transform.localScale;
+
+        // Prevents the detective from tipping over when walking into walls
         rb.freezeRotation = true;
     }
 
     void Update()
     {
-        // INPUT
-        x = Input.GetAxis("Horizontal");
-        z = Input.GetAxis("Vertical");
+        // 1. INPUT - Capture horizontal and depth movement
+        x = Input.GetAxisRaw("Horizontal");
+        z = Input.GetAxisRaw("Vertical");
 
-        // GROUND CHECK
-        float rayLength = 1.2f + groundDist;
-        isGrounded = Physics.Raycast(transform.position + Vector3.up * 0.1f,
-                                     Vector3.down,
-                                     rayLength,
-                                     terrainLayer);
-
-        // FALLING & LANDING
-        if (!isGrounded && rb.linearVelocity.y < -0.1f)
+        // 2. ANIMATION - Updates the "speed" parameter
+        if (animator != null)
         {
-            animator.SetBool("isFalling", true);
-        }
-        else if (isGrounded)
-        {
-            animator.SetBool("isFalling", false);
-            canFlip = true;
-            isFlipping = false;
-
-            if (!wasGroundedLastFrame)
-            {
-                StopAllCoroutines();
-                StartCoroutine(ApplySquash());
-            }
-        }
-        wasGroundedLastFrame = isGrounded;
-
-        // JUMP & FLIP
-        if (Input.GetButtonDown("Jump"))
-        {
-            if (isGrounded)
-            {
-                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
-                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-
-                animator.SetTrigger("jumpTrigger");
-                canFlip = true;
-
-                StartCoroutine(ApplyStretch());
-            }
-            else if (canFlip)
-            {
-                Debug.Log("FLIP TRIGGERED");
-
-                canFlip = false;
-                isFlipping = true;
-
-                animator.SetTrigger("flipTrigger");
-
-                float moveDir = x != 0 ? x : (sr.flipX ? -1 : 1);
-                rb.linearVelocity = new Vector3(
-                    moveDir * flipHorizontalBoost,
-                    jumpForce * 0.6f,
-                    z * flipHorizontalBoost
-                );
-
-                StartCoroutine(ApplyStretch());
-                StartCoroutine(EndFlip());
-            }
+            animator.SetFloat("speed", Mathf.Max(Mathf.Abs(x), Mathf.Abs(z)));
         }
 
-        // ANIMATION & SPRITE FLIP
-        animator.SetFloat("speed", Mathf.Max(Mathf.Abs(x), Mathf.Abs(z)));
-
+        // 3. SPRITE FACING - Flips the sprite based on left/right movement
         if (x < 0) sr.flipX = true;
         else if (x > 0) sr.flipX = false;
     }
 
     void FixedUpdate()
     {
-        // NORMAL MOVEMENT (disabled during flip)
-        if (!isFlipping)
+        // 4. DIAGONAL FIX (Normalization)
+        // We create a direction vector from our inputs
+        Vector3 moveDir = new Vector3(x, 0, z);
+
+        // If the vector length is greater than 1 (diagonal), we normalize it
+        // This ensures diagonal speed is the same as straight-line speed
+        if (moveDir.magnitude > 1)
         {
-            rb.linearVelocity = new Vector3(x * speed, rb.linearVelocity.y, z * speed);
-        }
-    }
-
-    IEnumerator EndFlip()
-    {
-        yield return new WaitForSeconds(0.4f); // match flip animation length
-        isFlipping = false;
-    }
-
-    IEnumerator ApplySquash()
-    {
-        transform.localScale = new Vector3(
-            originalScale.x * stretchAmount,
-            originalScale.y * squashAmount,
-            originalScale.z
-        );
-
-        yield return new WaitForSeconds(effectDuration);
-
-        float elapsed = 0;
-        while (elapsed < 0.1f)
-        {
-            elapsed += Time.deltaTime;
-            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, elapsed / 0.1f);
-            yield return null;
+            moveDir.Normalize();
         }
 
-        transform.localScale = originalScale;
-    }
-
-    IEnumerator ApplyStretch()
-    {
-        transform.localScale = new Vector3(
-            originalScale.x * squashAmount,
-            originalScale.y * stretchAmount,
-            originalScale.z
-        );
-
-        yield return new WaitForSeconds(effectDuration);
-
-        float elapsed = 0;
-        while (elapsed < 0.1f)
-        {
-            elapsed += Time.deltaTime;
-            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, elapsed / 0.1f);
-            yield return null;
-        }
-
-        transform.localScale = originalScale;
+        // 5. APPLY MOVEMENT
+        // We keep rb.linearVelocity.y so gravity still pulls the player down
+        rb.linearVelocity = new Vector3(moveDir.x * speed, rb.linearVelocity.y, moveDir.z * speed);
     }
 }
