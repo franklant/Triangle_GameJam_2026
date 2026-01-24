@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mind.unity
     guid: 26e2b907b0170074ab7c133876da2331
+  - enabled: 1
+    path: Assets/mind/puzzle.unity
+    guid: c88d3a0882e912d4190d07b8d2747e3f
+  - enabled: 1
+    path: Assets/puzzle/puzzle2.unity
+    guid: 253d6253440c9cb418e36a3021b67c81
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
