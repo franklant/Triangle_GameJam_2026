@@ -78,11 +78,6 @@ public class PuzzleManager : MonoBehaviour
 				yield return null;
 			}
 		}
-
-		if (targetSpawnID < 5)
-		{
-			PlayerPrefs.SetInt("MusicLevel", targetSpawnID);	// change the level of music to level 2
-		}
 		SceneManager.LoadScene(nextAreaName);
 	}
 }
