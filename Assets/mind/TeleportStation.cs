@@ -5,8 +5,6 @@ public class TeleportStation : MonoBehaviour
 	[Header("Teleport Settings")]
 	public Transform spawnPoint;      // Drag the dev box (spawn point) here
 	public GameObject player;         // Drag your Player object here
-	[Tooltip("Drag the audio manager prefab here.")]
-	public GameObject audioManager; 	  // Drag the Audio Manager prefab here
 
 	[Header("Visual Prompt")]
 	public GameObject promptObject;
@@ -15,7 +13,6 @@ public class TeleportStation : MonoBehaviour
 
 	private bool isPlayerInside = false;
 	private Vector3 startPos;
-	private int spawnNumber;
 
 	void Start()
 	{
@@ -24,12 +21,6 @@ public class TeleportStation : MonoBehaviour
 			promptObject.SetActive(false);
 			startPos = promptObject.transform.localPosition;
 		}
-
-		if (spawnPoint.name.Contains("spawn"))
-		{
-			spawnNumber = int.Parse(spawnPoint.name.Substring(5));
-		}
-		Debug.Log("SPAWN: " + spawnNumber);
 	}
 
 	void Update()
@@ -55,12 +46,6 @@ public class TeleportStation : MonoBehaviour
 			// Move the player to the exact position of the dev box
 			player.transform.position = spawnPoint.position;
 			Debug.Log("Teleported to: " + spawnPoint.name);
-
-			if (spawnNumber <= 5 && audioManager != null)
-			{
-				audioController ac = audioManager.GetComponent<audioController>();
-				ac.SwitchLevel(spawnNumber);
-			}
 		}
 	}
 
