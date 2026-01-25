@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: d03b328c7891d4e4ab5c49aabfac1e8e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - jigsawManager: {instanceID: 0}
+  - puzzleTexture: {fileID: 2800000, guid: 974a73585024f7c4a9c683ad4f21944d, type: 3}
+  - spawnPoint: {instanceID: 0}
+  - player: {instanceID: 0}
+  - promptObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
