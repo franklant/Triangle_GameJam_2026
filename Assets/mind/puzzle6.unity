@@ -1975,7 +1975,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635004363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 30e27695e30cf504db38ffd4a998a75d, type: 2}
   m_CullingMode: 0
@@ -2012,22 +2012,29 @@ MonoBehaviour:
   m_text: 'Credits:
 
 
-    Game Developer:
+    Evan Jones: Lead Art Director & Programmer
 
 
-    Puzzle Developer:
+    John Sampson:
+    Version Control and Repository Management, Programmer
 
 
-    Art:
+    Franklan Taylor:
+    Lead Music Composer & Programmer
 
 
-    Story:
+    Tristen Hall: Narrative Writer and Creative
+    Director
 
 
-    Music:
+    Kadin Henningham: Programmer
 
 
-'
+    Dakarai Lanes: Programmer
+
+
+    No
+    Third Party or AI Generated Assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2054,8 +2061,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 3.5
+  m_fontSizeBase: 3.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2210,7 +2217,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726575811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 30e27695e30cf504db38ffd4a998a75d, type: 2}
   m_CullingMode: 0
@@ -2247,22 +2254,29 @@ MonoBehaviour:
   m_text: 'Credits:
 
 
-    Game Developer:
+    Evan Jones: Lead Art Director & Programmer
 
 
-    Puzzle Developer:
+    John Sampson:
+    Version Control and Repository Management, Programmer
 
 
-    Art:
+    Franklan Taylor:
+    Lead Music Composer & Programmer
 
 
-    Story:
+    Tristen Hall: Narrative Writer and Creative
+    Director
 
 
-    Music:
+    Kadin Henningham: Programmer
 
 
-'
+    Dakarai Lanes: Programmer
+
+
+    No
+    Third Party or AI Generated Assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2289,8 +2303,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 3.5
+  m_fontSizeBase: 3.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3220,7 +3234,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032522843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 30e27695e30cf504db38ffd4a998a75d, type: 2}
   m_CullingMode: 0
@@ -3257,22 +3271,29 @@ MonoBehaviour:
   m_text: 'Credits:
 
 
-    Game Developer:
+    Evan Jones: Lead Art Director & Programmer
 
 
-    Puzzle Developer:
+    John Sampson:
+    Version Control and Repository Management, Programmer
 
 
-    Art:
+    Franklan Taylor:
+    Lead Music Composer & Programmer
 
 
-    Story:
+    Tristen Hall: Narrative Writer and Creative
+    Director
 
 
-    Music:
+    Kadin Henningham: Programmer
 
 
-'
+    Dakarai Lanes: Programmer
+
+
+    No
+    Third Party or AI Generated Assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3299,8 +3320,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 3.5
+  m_fontSizeBase: 3.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4691,7 +4712,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533508406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 30e27695e30cf504db38ffd4a998a75d, type: 2}
   m_CullingMode: 0
@@ -4728,22 +4749,29 @@ MonoBehaviour:
   m_text: 'Credits:
 
 
-    Game Developer:
+    Evan Jones: Lead Art Director & Programmer
 
 
-    Puzzle Developer:
+    John Sampson:
+    Version Control and Repository Management, Programmer
 
 
-    Art:
+    Franklan Taylor:
+    Lead Music Composer & Programmer
 
 
-    Story:
+    Tristen Hall: Narrative Writer and Creative
+    Director
 
 
-    Music:
+    Kadin Henningham: Programmer
 
 
-'
+    Dakarai Lanes: Programmer
+
+
+    No
+    Third Party or AI Generated Assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4770,8 +4798,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 3.5
+  m_fontSizeBase: 3.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6400,7 +6428,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919894544}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 30e27695e30cf504db38ffd4a998a75d, type: 2}
   m_CullingMode: 0
@@ -6437,22 +6465,29 @@ MonoBehaviour:
   m_text: 'Credits:
 
 
-    Game Developer:
+    Evan Jones: Lead Art Director & Programmer
 
 
-    Puzzle Developer:
+    John Sampson:
+    Version Control and Repository Management, Programmer
 
 
-    Art:
+    Franklan Taylor:
+    Lead Music Composer & Programmer
 
 
-    Story:
+    Tristen Hall: Narrative Writer and Creative
+    Director
 
 
-    Music:
+    Kadin Henningham: Programmer
 
 
-'
+    Dakarai Lanes: Programmer
+
+
+    No
+    Third Party or AI Generated Assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6479,8 +6514,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 3.5
+  m_fontSizeBase: 3.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
