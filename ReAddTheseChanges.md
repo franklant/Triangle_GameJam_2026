@@ -14,3 +14,8 @@ if (targetSpawnID < 5)
 
 ## Reset Music Object
 - *'resetMusic.cs'* component script.
+
+# Additions
+- [x] Added music to the *reality* and *mind* scene.
+- [x] Added music to all *puzzle* scenes.
+- [x] Added proper music progression to switch in between each layer.
