@@ -5053,7 +5053,7 @@ PrefabInstance:
       objectReference: {fileID: 953916463}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[0]'
@@ -5062,6 +5062,10 @@ PrefabInstance:
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
       value: 'Rose: let me do my job '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: "Comissioner: Turn on the lights \nand hop in the mind and find out"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6260,7 +6264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[0]'
-      value: 'Commissioner Harold: Detective Rose, good morning.
+      value: 'Bodyguard Harold: Detective Rose, good morning.
 
 '
       objectReference: {fileID: 0}
@@ -6270,9 +6274,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[2]'
-      value: 'Commissioner Harold: As you may have heard, we found Pisces'' body
-        this morning in the woods off of Lake Road. We found very little evidence
-        at the scene.
+      value: 'Bodyguard Harold: As you may have heard, we found my boss'' body this
+        morning in the woods off of Lake Road. We found very little evidence at the
+        scene.
 
 '
       objectReference: {fileID: 0}
@@ -6284,7 +6288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[4]'
-      value: 'Commissioner: I''m glad you understand. We need you to use DeepDive
+      value: 'Bodyguard Harold: I''m glad you understand. We need you to use DeepDive
         to analyze what remains of her brain to recreate the crime scene. An autopsy
         report to determine the cause of death. I will inform you when that is ready.
         Turn off the light and step into the machine to begin
