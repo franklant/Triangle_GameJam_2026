@@ -5911,6 +5911,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &585034865
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2011947951884396682, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 94.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -29.99369
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028773587939806066, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+--- !u!1 &585034866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2011947951884396682, guid: 7b9161cbb29097642b066214ed85f77d, type: 3}
+  m_PrefabInstance: {fileID: 585034865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &588695607
 GameObject:
   m_ObjectHideFlags: 0
@@ -8947,6 +9009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportStation
   spawnPoint: {fileID: 1110341611}
   player: {fileID: 1948906004}
+  audioManager: {fileID: 585034866}
   promptObject: {fileID: 1420002163}
   floatSpeed: 3
   floatAmount: 0.2
@@ -10086,6 +10149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportStation
   spawnPoint: {fileID: 1645371154}
   player: {fileID: 1948906004}
+  audioManager: {fileID: 585034866}
   promptObject: {fileID: 1420002163}
   floatSpeed: 3
   floatAmount: 0.2
@@ -10216,6 +10280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportStation
   spawnPoint: {fileID: 343433233}
   player: {fileID: 1948906004}
+  audioManager: {fileID: 585034866}
   promptObject: {fileID: 1420002163}
   floatSpeed: 3
   floatAmount: 0.2
@@ -17834,6 +17899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportStation
   spawnPoint: {fileID: 2099420638}
   player: {fileID: 1948906004}
+  audioManager: {fileID: 585034866}
   promptObject: {fileID: 1420002163}
   floatSpeed: 3
   floatAmount: 0.2
@@ -18727,6 +18793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportStation
   spawnPoint: {fileID: 1217862452}
   player: {fileID: 1948906004}
+  audioManager: {fileID: 585034866}
   promptObject: {fileID: 1420002163}
   floatSpeed: 3
   floatAmount: 0.2
@@ -20239,6 +20306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportStation
   spawnPoint: {fileID: 1158545876}
   player: {fileID: 1948906004}
+  audioManager: {fileID: 585034866}
   promptObject: {fileID: 1420002163}
   floatSpeed: 3
   floatAmount: 0.2
@@ -28699,3 +28767,4 @@ SceneRoots:
   - {fileID: 800499184}
   - {fileID: 1671224216}
   - {fileID: 313202554}
+  - {fileID: 585034865}

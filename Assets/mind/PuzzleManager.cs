@@ -104,6 +104,14 @@ public class PuzzleManager : MonoBehaviour
 				yield return null;
 			}
 		}
+
+		// SWITCH MUSIC HERE
+		if (targetSpawnID <= 5)
+		{
+			Debug.Log("SPAWN ID: " + targetSpawnID);
+			PlayerPrefs.SetInt("MusicLevel", targetSpawnID);	// change the level of music to level 2
+		}
+		
 		if (!string.IsNullOrEmpty(nextAreaName)) SceneManager.LoadScene(nextAreaName);
 	}
 
