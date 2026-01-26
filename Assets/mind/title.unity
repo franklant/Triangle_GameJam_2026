@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362a6e5b1a96c194092cfc51368cdd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  firstSceneName: reality
+  firstSceneName: intro
   startingSpawnID: 0
   fadeCanvasGroup: {fileID: 0}
 --- !u!4 &1743863168
