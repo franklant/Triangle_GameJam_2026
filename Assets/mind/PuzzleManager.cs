@@ -1,7 +1,9 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -12,61 +14,85 @@ public class PuzzleManager : MonoBehaviour
 
 	[Header("Dialogue UI")]
 	public GameObject dialoguePanel;
-	public Text dialogueText;
-	public Button nextButton;
+	public UnityEngine.UI.Text dialogueText;
 
-	[Header("Script")]
+	[Header("Investigation Script")]
 	[TextArea(3, 10)]
-	public string[] dialogueLines; // A list of dialogue lines
+	public string[] dialogueLines;
 	private int currentLineIndex = 0;
+	private bool isDialogueActive = false;
+
+	[Header("Music Note Puzzle")]
+	public int notesRequired = 10;
+	private int notesCollected = 0;
+	public MonoBehaviour spawner;
+
+	[Header("Glove/Bottle Puzzle")]
+	public int bottlesNeeded = 2;
+	private int bottlesCaught = 0;
+
+	[Header("Ending UI (Separate Panels)")]
+	public EndingData[] allEndings;
+
+	[System.Serializable]
+	public struct EndingData
+	{
+		public string suspectName;
+		public GameObject specificEndingPanel;
+	}
+
+	// --- FIX FOR THE PHONE GLITCH ---
+	// This removes focus from any buttons so Space doesn't re-trigger them
+	public void ClearUIFocus()
+	{
+		if (EventSystem.current != null)
+		{
+			EventSystem.current.SetSelectedGameObject(null);
+		}
+	}
 
 	void Start()
 	{
-		Cursor.visible = true;
-		Cursor.lockState = CursorLockMode.None;
-
-		dialoguePanel.SetActive(false);
+		if (dialoguePanel != null) dialoguePanel.SetActive(false);
+		foreach (var ending in allEndings)
+		{
+			if (ending.specificEndingPanel != null)
+				ending.specificEndingPanel.SetActive(false);
+		}
 		if (fadeCanvasGroup != null) fadeCanvasGroup.alpha = 0;
-
-		// The button now calls 'ShowNextLine' instead of starting the transition immediately
-		nextButton.onClick.AddListener(ShowNextLine);
 	}
 
-	public void OnPuzzleComplete()
+	void Update()
 	{
-		dialoguePanel.SetActive(true);
-		currentLineIndex = 0;
-		UpdateText();
-	}
-
-	void ShowNextLine()
-	{
-		currentLineIndex++;
-
-		// Check if we still have lines left
-		if (currentLineIndex < dialogueLines.Length)
+		if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
 		{
-			UpdateText();
-		}
-		else
-		{
-			// No more lines? Start the teleport!
-			StartTransition();
+			if (currentLineIndex == 999)
+			{
+				CloseDialogue();
+			}
+			else if (dialogueLines != null && currentLineIndex < dialogueLines.Length - 1)
+			{
+				ShowNextLine();
+			}
+			else
+			{
+				StartTransition();
+			}
 		}
 	}
 
-	void UpdateText()
+	public void StartTransition()
 	{
-		dialogueText.text = dialogueLines[currentLineIndex];
-	}
+		isDialogueActive = false;
+		if (dialoguePanel != null) dialoguePanel.SetActive(false);
 
-	void StartTransition()
-	{
+		// Tell teleport system where to go
 		sceneTeleportator.nextSpawnPoint = targetSpawnID;
-		StartCoroutine(TransitionToNextArea());
+
+		StartCoroutine(TransitionRoutine());
 	}
 
-	IEnumerator TransitionToNextArea()
+	IEnumerator TransitionRoutine()
 	{
 		if (fadeCanvasGroup != null)
 		{
@@ -79,10 +105,58 @@ public class PuzzleManager : MonoBehaviour
 			}
 		}
 
-		if (targetSpawnID < 5)
+		// SWITCH MUSIC HERE
+		if (targetSpawnID <= 5)
 		{
+			Debug.Log("SPAWN ID: " + targetSpawnID);
 			PlayerPrefs.SetInt("MusicLevel", targetSpawnID);	// change the level of music to level 2
 		}
-		SceneManager.LoadScene(nextAreaName);
+		
+		if (!string.IsNullOrEmpty(nextAreaName)) SceneManager.LoadScene(nextAreaName);
 	}
+
+	public void ShowItemText(string newText)
+	{
+		if (dialoguePanel == null) return;
+
+		ClearUIFocus(); // Force the UI to stop looking at the phone buttons
+
+		dialoguePanel.SetActive(true);
+		dialogueText.text = newText;
+		isDialogueActive = true;
+		currentLineIndex = 999;
+	}
+
+	public void OnPuzzleComplete()
+	{
+		if (dialoguePanel == null) return;
+
+		ClearUIFocus(); // Force focus off any buttons
+
+		dialoguePanel.SetActive(true);
+		isDialogueActive = true;
+		currentLineIndex = 0;
+		UpdateText();
+	}
+
+	public void ShowEnding(int suspectIndex)
+	{
+		if (allEndings.Length <= suspectIndex) return;
+		foreach (var ending in allEndings)
+			if (ending.specificEndingPanel != null) ending.specificEndingPanel.SetActive(false);
+
+		GameObject chosenPanel = allEndings[suspectIndex].specificEndingPanel;
+		if (chosenPanel != null) chosenPanel.SetActive(true);
+	}
+	public void ReturnToMainMenu()
+	{
+		// Ensure "TitleScreen" matches the exact name of your title scene in Build Settings
+		SceneManager.LoadScene("title");
+	}
+
+	public void CatchBottle() { bottlesCaught++; if (bottlesCaught >= bottlesNeeded) OnPuzzleComplete(); }
+	public void IncrementNoteCount() { notesCollected++; if (notesCollected >= notesRequired) OnPuzzleComplete(); }
+	void ShowNextLine() { currentLineIndex++; UpdateText(); }
+	void UpdateText() { if (dialogueLines.Length > 0 && currentLineIndex < dialogueLines.Length) dialogueText.text = dialogueLines[currentLineIndex]; }
+	void CloseDialogue() { isDialogueActive = false; if (dialoguePanel != null) dialoguePanel.SetActive(false); }
 }
