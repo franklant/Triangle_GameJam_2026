@@ -2186,10 +2186,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1167111676}
   dialogueText: {fileID: 899533207}
   dialogueLines:
-  - Liza did say that acouple bottles were missing that day...
-  - who could have taken them
-  - 'we were to busy getting ready for Darl''s '
-  - 'I remember, it was a night club!!! '
+  - 'Picses: Liza did say that acouple bottles were missing that day...'
+  - 'Picses: we were to busy getting ready to go the Nightclub to notice'
+  - 'Rose: who could have taken them'
+  - 'Rose: I need to search Darl''s Nightclub '
   notesRequired: 10
   spawner: {fileID: 0}
   bottlesNeeded: 2

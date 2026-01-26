@@ -5000,7 +5000,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1516783467}
   dialogueText: {fileID: 781167068}
   dialogueLines:
-  - testing
+  - Who is the culprit?
   notesRequired: 10
   spawner: {fileID: 0}
   bottlesNeeded: 2

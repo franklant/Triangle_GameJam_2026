@@ -1484,10 +1484,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1265508519}
   dialogueText: {fileID: 1654796734}
   dialogueLines:
-  - I created this song...
-  - it was a hit...
-  - we recorded it at the studio
-  - I'm starting to remember...
+  - 'Picses: I loved writing this song. '
+  - 'Picses: I remember recording it at the studio.'
+  - 'Picses:  Everyone smiled when we recorded it at the studio.'
+  - 'Rose: The studio...'
   notesRequired: 10
   spawner: {fileID: 826657092}
   bottlesNeeded: 2

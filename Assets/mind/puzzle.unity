@@ -1723,10 +1723,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1160456908}
   dialogueText: {fileID: 2139458233}
   dialogueLines:
-  - "The last drink I had before I died...\n "
-  - very tasty last drink
-  - I wonder who it was from
-  - I've seemed to forget
+  - "Picses: The last drink I had before I died...\n "
+  - 'Picses:  It was sweet but had a weird aftertaste.'
+  - 'Rose: The tag is damaged. '
+  - 'Rose: Is the person that gifted this the culprit??'
   notesRequired: 10
   spawner: {fileID: 0}
   bottlesNeeded: 2
