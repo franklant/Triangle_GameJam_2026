@@ -1338,11 +1338,11 @@ MonoBehaviour:
   dialoguePanel: {fileID: 730344404}
   dialogueText: {fileID: 301877154}
   dialogueLines:
-  - 'that number... '
+  - 'Rose: That phone number.  '
   - 341 338 7711...
   - Emma...
-  - she wanted meet at Darl's...
-  - where was that again...
+  - 'Rose: she wanted meet at Darl''s...'
+  - 'Rose: i think that is a nightclub'
   notesRequired: 10
   spawner: {fileID: 0}
   bottlesNeeded: 2

@@ -1981,7 +1981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5460999
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2015,6 +2015,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_Name
       value: dialogTrigger 1 (2)
@@ -2029,7 +2033,11 @@ PrefabInstance:
       objectReference: {fileID: 200866041}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Emma: I doesent matter where you arreeee!!! my heart will be with you'
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
@@ -3110,6 +3118,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_Name
       value: dialogTrigger 1 (1)
@@ -3124,13 +3136,21 @@ PrefabInstance:
       objectReference: {fileID: 200866041}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Harold: we have the results back'
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: 'Come here so you can find out
+      value: 'Rose: What do you think it is.
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: 'Harold: We think she was poisoned with a painkiller'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3443,7 +3463,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1001 &335911176
+--- !u!1001 &327432889
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3465,7 +3485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.994802
+      value: 37.83
       objectReference: {fileID: 0}
     - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3473,7 +3493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.6795598
+      value: 4.07
       objectReference: {fileID: 0}
     - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3505,6 +3525,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_Name
+      value: dialogTrigger 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 772494901}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 200866041}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Pisces: That bottle was a gift from a friend'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: '
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+--- !u!1001 &335911176
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.2218666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.2218666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.2218666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.994802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5460999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Name
       value: dialogTrigger 1
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
@@ -3520,8 +3635,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Rose: Pisces'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: 'Come here so you can find out
+      value: 'Pisces:......hello
 
 '
       objectReference: {fileID: 0}
@@ -19618,6 +19737,196 @@ Transform:
   m_Children: []
   m_Father: {fileID: 888079884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1313413840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 126.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Name
+      value: dialogTrigger 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 772494901}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 200866041}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Picses: The song my goodbye song.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: 'Come here so you can find out
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+--- !u!1001 &1330277098
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 94.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Name
+      value: dialogTrigger 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 772494901}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 200866041}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Picses: we were exicited after releasing my newest track'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: 'Come here so you can find out
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
 --- !u!1 &1347890334
 GameObject:
   m_ObjectHideFlags: 0
@@ -26141,6 +26450,101 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 1
   distance: 0.5
+--- !u!1001 &1843493482
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8264762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 63.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5460999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962420716573248599, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Name
+      value: dialogTrigger 1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 772494901}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 200866041}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Pisces: Wheres my phone?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: '
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
 --- !u!1 &1845971781
 GameObject:
   m_ObjectHideFlags: 0
@@ -28946,6 +29350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000769252912556843, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4464205565039239332, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: m_Name
       value: dialogTrigger 1 (4)
@@ -28960,17 +29368,18 @@ PrefabInstance:
       objectReference: {fileID: 200866041}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: lines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[0]'
-      value: 'I''m missing accouple
+      value: 'Rose: She recently signed a new contract, it would require her to move
+        to LA
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: 
+      value: 'Harold: We are on the edge of this case '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29971,7 +30380,11 @@ SceneRoots:
   - {fileID: 1408674804}
   - {fileID: 1270730106}
   - {fileID: 335911176}
+  - {fileID: 327432889}
   - {fileID: 294812257}
+  - {fileID: 1843493482}
   - {fileID: 205243818}
+  - {fileID: 1330277098}
+  - {fileID: 1313413840}
   - {fileID: 200577643}
   - {fileID: 2081366968}
