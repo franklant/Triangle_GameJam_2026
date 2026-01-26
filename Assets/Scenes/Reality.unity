@@ -5057,7 +5057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[0]'
-      value: 'journalist: Any comments on Pisces death detective Rose???'
+      value: 'Comissioner: Any comments on Pisces death detective Rose???'
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
@@ -6270,7 +6270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: 'Rose: good morning to you commissioner Harold'
+      value: 'Rose: good morning to you Harold'
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[2]'
