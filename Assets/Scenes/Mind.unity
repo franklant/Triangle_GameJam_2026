@@ -1865,15 +1865,20 @@ PrefabInstance:
       objectReference: {fileID: 200866041}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: "Janitor: \nGotta sweep sweep sweep"
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: 'Gotta sweep sweep sweep
+      value: '
 
 '
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1334332734516144953, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -26534,7 +26539,7 @@ PrefabInstance:
       objectReference: {fileID: 200866041}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6703398087511372979, guid: 3a47aadbccb3231498296dce44a862f2, type: 3}
       propertyPath: 'lines.Array.data[0]'
